@@ -18,11 +18,23 @@ The primary data source for this project is the **World Bank**. We utilize their
 - `meeting_screenshots/`: Visual records of project discussions and progress.
 - `requirements.txt`: Python dependencies required for the project.
 
-## Usage
-To set up the environment, run:
-```bash
-pip install -r requirements.txt
-```
+## Running the Data Merging Script
+If you prefer not to use Jupyter Notebooks, you can run the data merging logic directly from your terminal:
+
+1.  **Install dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+2.  **Run the script**:
+    ```bash
+    python scripts/data_merging.py
+    ```
+    This will process the raw Excel files and save the output to `data/processed/merged_dataset_v1.csv`.
+
+## Notebook Usage
+Alternatively, you can use the Jupyter Notebook:
+1.  Open `notebooks/01_data_merging.ipynb` in Anaconda or VS Code.
+2.  Ensure your kernel is set to an environment with `pandas` and `xlrd` installed.
 
 ---
 *Developed for academic purposes to monitor and model global income inequality.*
