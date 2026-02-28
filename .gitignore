@@ -151,3 +151,10 @@ cython_debug/
 # System files
 .DS_Store
 Thumbs.db
+
+# Project-specific ignores
+*.xls
+*.xlsx
+*.csv
+/notebooks/*.ipynb
+!/notebooks/.gitkeep
