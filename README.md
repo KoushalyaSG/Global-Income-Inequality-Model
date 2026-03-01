@@ -1,40 +1,49 @@
 # Global Income Inequality Model – SDG 10
 
-## Project Objective
-This project aims to analyze and model global income inequality trends, aligning with **Sustainable Development Goal 10 (Reduced Inequalities)**. The goal is to identify patterns, drivers, and potential interventions to reduce inequality within and among countries.
+## Project Overview
+This project provides a data-driven analysis of global income inequality trends, focusing on **Sustainable Development Goal 10 (Reduced Inequalities)**. Using regression modeling, we investigate how socio-economic factors like education spending and unemployment impact the Gini Index in target nations (India, USA, and Brazil).
 
-## SDG 10 Alignment
-This project directly supports SDG 10 by providing data-driven insights into income distribution and economic disparities. By modeling these factors, we contribute to the global effort to ensure no one is left behind.
+## Problem Statement
+High levels of income inequality hinder economic growth and social cohesion. This project aims to monitor these disparities and provide predictive tools for stakeholders to simulate the impact of policy changes on national inequality profiles.
 
-## Data Source
-The primary data source for this project is the **World Bank**. We utilize their comprehensive datasets on income, GDP, and social indicators to build our models.
+## Objectives
+1.  **Trend Analysis**: Examine Gini Index trends (2014-2023) for target countries.
+2.  **Correlation Study**: Analyze the impact of Education Spending and Unemployment on inequality.
+3.  **Predictive Modeling**: Implement a Linear Regression model to estimate the Gini Index.
+4.  **Scenario Simulation**: Provide an interactive interface for real-time prediction.
+
+## Waterfall Methodology & Team Allocation
+The project followed a sequential waterfall model, with each phase documented and credited to specific team members:
+
+### TEAM 1 — PART 1 (Data Preparation)
+- **Data Collection**: Adith n k (1ST22AD001)
+- **Data Cleaning**: Mohammed IFTEQHAR (1VJ22AI019)
+- **Data Preprocessing**: Mohamed Ashas (1VJ22AI017)
+- **Feature Engineering**: Abdur Rehman sarim (1VJ22AI001)
+- **Data Validation**: Shaik sahil (1VJ22AI029)
+
+### TEAM 2 — PART 2 (Analysis & Implementation)
+- **Data Analysis**: Shubha R (1ST22CS200)
+- **Technical Analysis Support**: Ritesh (1ME22CS121)
+- **Repository Maintenance**: Guruprasad Pujari (2BL23CI402)
+- **Results Output Generation**: Sankirana (2BL22CI042)
+- **Documentation & Reporting**: Koushalya siddappa Gujjatti (1B022AI012)
 
 ## Repository Structure
-- `data/raw/`: Contains original, unmodified datasets. **Important: Raw data must not be modified.**
-- `data/processed/`: Contains cleaned, merged, and preprocessed data ready for analysis.
-- `notebooks/`: Jupyter notebooks detailing the data pipeline and modeling process.
-- `reports/`: Final reports and summaries of findings.
-- `meeting_logs/`: Documentation of project meetings and decisions.
-- `meeting_screenshots/`: Visual records of project discussions and progress.
-- `requirements.txt`: Python dependencies required for the project.
+- `data/raw/`: Original World Bank datasets (Gini, Education, Unemployment).
+- `notebooks/`:
+    - `01_data_merging.ipynb`: Initial unification logic.
+    - `SDG10_FINAL_SUBMISSION.ipynb`: **Definitive project notebook** with modeling, evaluation, and interactive GUI.
+- `scripts/`: Python utilities for data processing and header updates.
+- `sdg10_gini_model.joblib`: The trained and serialized Linear Regression model.
 
-## Running the Data Merging Script
-If you prefer not to use Jupyter Notebooks, you can run the data merging logic directly from your terminal:
-
-1.  **Install dependencies**:
+## Getting Started
+1.  **Install Dependencies**:
     ```bash
-    pip install -r requirements.txt
+    pip install pandas numpy matplotlib seaborn scikit-learn joblib ipywidgets
     ```
-2.  **Run the script**:
-    ```bash
-    python scripts/data_merging.py
-    ```
-    This will process the raw Excel files and save the output to `data/processed/merged_dataset_v1.csv`.
-
-## Notebook Usage
-Alternatively, you can use the Jupyter Notebook:
-1.  Open `notebooks/01_data_merging.ipynb` in Anaconda or VS Code.
-2.  Ensure your kernel is set to an environment with `pandas` and `xlrd` installed.
+2.  **Open the Final Notebook**:
+    Navigate to `notebooks/SDG10_FINAL_SUBMISSION.ipynb` to view the full analysis and use the interactive prediction sliders.
 
 ---
-*Developed for academic purposes to monitor and model global income inequality.*
+*Aligned with UN Sustainable Development Goal 10: Reduced Inequalities.*
