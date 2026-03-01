@@ -45,5 +45,24 @@ The project followed a sequential waterfall model, with each phase documented an
 2.  **Open the Final Notebook**:
     Navigate to `notebooks/SDG10_FINAL_SUBMISSION.ipynb` to view the full analysis and use the interactive prediction sliders.
 
+## Major Findings & India Analysis
+The project yielded several key insights focusing on the relationship between socio-economic factors and the Gini Index:
+
+- **India Specifics (Latest 2022 Data)**:
+    - **Gini Index**: 35.5 (Lower relative to Brazil/USA, indicating more balanced wealth distribution).
+    - **Education Spending**: ~4.1% of GDP.
+    - **Unemployment Rate**: ~4.8%.
+- **Global Correlations**:
+    - **Education & Inequality**: A strong positive correlation (0.89) was observed across the target countries. While intuitive for some regions, in our target set (India, USA, Brazil), countries with higher spending often faced complex structural inequalities (e.g., Brazil).
+    - **Unemployment Impact**: Every 1% increase in unemployment is modeled to contribute to a rise in the Gini Index, reinforcing the goal of SDG 10.
+- **Model Performance**:
+    - The Linear Regression model provides a foundational estimate. While the Gini Index is influenced by hundreds of factors, Education and Unemployment alone serve as effective primary indicators for baseline predictions.
+
+## Interactive Tools
+At the bottom of the final notebook, we have included an **Interactive Scenario Simulator**. This allows you to:
+1. Adjust the **Education Spending %** slider.
+2. Adjust the **Unemployment %** slider.
+3. Observe the **Predicted Gini Index** update in real-time.
+
 ---
 *Aligned with UN Sustainable Development Goal 10: Reduced Inequalities.*
